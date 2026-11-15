@@ -71,11 +71,24 @@ Archived Sentinel-2 surface reflectance is screened for cloud and poor-quality p
 
 The principal canopy-related signal is **NDVI**:
 
-\[\mathrm{NDVI}=\frac{\rho_{NIR}-\rho_{red}}{\rho_{NIR}+\rho_{red}}.\]
+$$
+\mathrm{NDVI} =
+\frac{\rho_{\mathrm{NIR}}-\rho_{\mathrm{red}}}
+{\rho_{\mathrm{NIR}}+\rho_{\mathrm{red}}}
+$$
+
 
 To compare seasons on a consistent relative scale, block-mean NDVI is scaled using the pooled 5th and 95th percentiles:
 
-\[P(t)=\operatorname{clip}\!\left(\frac{NDVI(t)-q_{0.05}}{q_{0.95}-q_{0.05}},0,1\right).\]
+
+$$
+P(t) = \operatorname{clip}\left(
+\frac{\mathrm{NDVI}(t)-q_{0.05}}
+{q_{0.95}-q_{0.05}},
+0,1
+\right)
+$$
+
 
 **Important:** \(P(t)\) is a *relative greenness/canopy-related proxy*; it is **not** directly measured fractional grapevine canopy cover. Soil, shadows and inter-row plants may influence the signal.
 
@@ -93,7 +106,16 @@ An example from the archived pipeline:
 
 NASA POWER weather is prepared for AquaCrop-OSPy. The implementation uses **RefET** to calculate reference evapotranspiration and accumulates thermal time using:
 
-\[T_{mean}=\frac{T_{max}+T_{min}}{2},\qquad GDD_d=\max(0,\min(T_{mean},35)-10).\]
+
+$$
+T_{\mathrm{mean}} = \frac{T_{\max}+T_{\min}}{2}
+$$
+
+$$
+\mathrm{GDD}_d =
+\max\left(0,\min(T_{\mathrm{mean}},35)-10\right)
+$$
+
 
 Temperatures are in degrees Celsius. **10°C** and **35°C** are the implemented base and upper temperatures; they are modelling choices, not independently measured vineyard thresholds. Cumulative GDD connects satellite-estimated event dates to the model's crop-development timing inputs.
 
