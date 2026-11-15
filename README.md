@@ -81,13 +81,15 @@ $$
 To compare seasons on a consistent relative scale, block-mean NDVI is scaled using the pooled 5th and 95th percentiles:
 
 
+
 $$
-P(t) = \operatorname{clip}\left(
+P(t) = \mathrm{clip}\left(
 \frac{\mathrm{NDVI}(t)-q_{0.05}}
 {q_{0.95}-q_{0.05}},
-0,1
+0, 1
 \right)
 $$
+
 
 
 **Important:** \(P(t)\) is a *relative greenness/canopy-related proxy*; it is **not** directly measured fractional grapevine canopy cover. Soil, shadows and inter-row plants may influence the signal.
