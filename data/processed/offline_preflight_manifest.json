@@ -1,0 +1,35 @@
+{
+  "status": "satellite_GDD_preflight_only__NOT_AQUACROP_VALIDATED",
+  "n_archived_dates": 219,
+  "growing_seasons": [
+    "2017/2018",
+    "2018/2019",
+    "2019/2020",
+    "2020/2021",
+    "2021/2022",
+    "2022/2023",
+    "2023/2024"
+  ],
+  "counts": {
+    "2017/2018": 16,
+    "2018/2019": 31,
+    "2019/2020": 34,
+    "2020/2021": 34,
+    "2021/2022": 33,
+    "2022/2023": 37,
+    "2023/2024": 34
+  },
+  "archive_sha256": "7e2a64327ee284bce91beed6fd7d12819d4d1d40e1e25d9f6e6aeb7df2662586",
+  "n_weather_rows": 5479,
+  "ndvi_scaling": {
+    "Low_percentile": 5,
+    "High_percentile": 95,
+    "NDVI_low_endmember": 0.3837124570088851,
+    "NDVI_high_endmember": 0.8199285540299369,
+    "Grid_interval_days": 5,
+    "SG_window_points": 7,
+    "SG_nominal_window_days": 35,
+    "SG_polyorder": 2
+  },
+  "warning": "No Earth Engine re-extraction, RefET ETo or AquaCrop simulation performed."
+}

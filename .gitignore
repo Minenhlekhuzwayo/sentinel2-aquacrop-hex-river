@@ -1,0 +1,44 @@
+# Python and notebook temporary files
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+.env
+.env.*
+!*.example
+.ipython/
+
+# Editor / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.swp
+~$*
+
+# Credentials and secrets
+credentials.json
+client_secret*.json
+*.pem
+*.key
+*.p12
+*.pfx
+*.secrets
+
+# Avoid accidentally committing downloaded archives or a large demo video
+*.zip
+*.7z
+*.mp4
+*.mov
+
+# An unverified re-extraction must not replace the archived input automatically
+data/raw/*reextracted*.csv
+
+# The research outputs are intentionally not ignored. Review data rights
+# and exact vineyard polygon before making the repository PUBLIC.

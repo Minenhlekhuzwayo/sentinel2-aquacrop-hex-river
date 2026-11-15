@@ -1,0 +1,42 @@
+{
+  "status": "full_aquacrop_seven_season_run_completed_and_checked",
+  "satellite_source": "cache",
+  "satellite_input_file": "data/raw/sentinel2_dagbreek_features_archived_219.csv",
+  "satellite_input_sha256": "7e2a64327ee284bce91beed6fd7d12819d4d1d40e1e25d9f6e6aeb7df2662586",
+  "nasa_power_source_sha256": "c6b4ed911ff38df915615b15993e831339ba1ced1f516724a583b1a40d20163f",
+  "n_satellite_observations": 219,
+  "n_growing_seasons": 7,
+  "growing_seasons": [
+    "2017/2018",
+    "2018/2019",
+    "2019/2020",
+    "2020/2021",
+    "2021/2022",
+    "2022/2023",
+    "2023/2024"
+  ],
+  "cloud_threshold_percent": 30,
+  "end_date_ee_exclusive": "2024-05-01",
+  "gdd_method": 1,
+  "t_base_c": 10.0,
+  "t_upper_c": 35.0,
+  "canopy_proxy_settings": {
+    "Low_percentile": 5,
+    "High_percentile": 95,
+    "NDVI_low_endmember": 0.3837124570088851,
+    "NDVI_high_endmember": 0.8199285540299369,
+    "Grid_interval_days": 5,
+    "SG_window_points": 7,
+    "SG_nominal_window_days": 35,
+    "SG_polyorder": 2
+  },
+  "grape_kcb": 1.1,
+  "software": {
+    "python": "3.13.18",
+    "pandas": "2.2.3",
+    "numpy": "2.4.6",
+    "aquacrop": "unknown",
+    "refet": "0.5.0"
+  },
+  "interpretive_limitations": "Satellite-informed canopy agreement is in-sample; no independent vineyard field validation or actual irrigation records."
+}

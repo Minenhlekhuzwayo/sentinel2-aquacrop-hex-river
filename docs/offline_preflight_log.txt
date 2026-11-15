@@ -1,0 +1,18 @@
+OFFLINE PREFLIGHT PASSED: Archived Sentinel -> canopy smoothing -> phenology -> GDD
+Preliminary phenology (from archived 219-date source only):
+   Season Budbreak_Date Full_Budbreak_Date Maximum_CC_Date Senescence_Onset_Date  Early_Growth_Left_Censored_Flag
+2017/2018    2017-09-08         2017-09-13      2017-12-07            2018-01-11                            False
+2018/2019    2018-10-03         2018-10-03      2019-01-06            2019-02-15                             True
+2019/2020    2019-09-18         2019-09-23      2019-11-27            2020-01-06                            False
+2020/2021    2020-09-27         2020-10-02      2020-12-06            2021-04-10                            False
+2021/2022    2021-10-02         2021-10-02      2021-12-16            2022-01-05                            False
+2022/2023    2022-09-17         2022-09-27      2022-12-31            2023-03-21                            False
+2023/2024    2023-10-07         2023-10-07      2024-01-10            2024-03-25                            False
+Satellite QA:    Season  Maximum_Gap_Days
+2017/2018                50
+2018/2019                25
+2019/2020                20
+2020/2021                15
+2021/2022                15
+2022/2023                25
+2023/2024                20

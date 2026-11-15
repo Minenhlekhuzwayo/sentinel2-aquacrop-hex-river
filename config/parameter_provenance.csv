@@ -1,0 +1,39 @@
+Parameter,WorkingValue,Units,Classification,SourceOrBasis,NeedsPrimarySourceAudit,Notes
+CropType,3,AquaCrop code,implementation configuration,Crop() implementation and project study design,No,PlantMethod=1 is an annual-crop software convention; study cycle begins at budbreak
+PlantMethod,1,AquaCrop code,implementation configuration,Crop() implementation and project study design,No,PlantMethod=1 is an annual-crop software convention; study cycle begins at budbreak
+CalendarType,2,AquaCrop code,implementation configuration,Crop() implementation and project study design,No,PlantMethod=1 is an annual-crop software convention; study cycle begins at budbreak
+GDDmethod,1,AquaCrop code,implementation configuration,Crop() implementation and project study design,No,PlantMethod=1 is an annual-crop software convention; study cycle begins at budbreak
+Tbase,10,°C,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+Tupp,35,°C,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+CCx,0.65,fraction,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+CGC,0.0054,1/GDD,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+CDC,0.0014,1/GDD,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+Emergence,130,GDD,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+Senescence,1941,GDD,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+Maturity,3681,GDD,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+Zmax,1.2,m,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+WP,35,g/m2,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+HI0,0.55,fraction,literature-motivated working transcription,"Er-Raki et al. 2021 table-grape model, primary source audit pending",Yes,Transcribed from original research notebook; values/units not independently checked against the full paper in this runtime
+CC0,0.064,fraction,literature-motivated working transcription,Er-Raki et al. 2021 initial cover (project working value),Yes,Software computes CC0 from PlantPop and SeedSize
+PlantPop,10000,software units,numerical implementation,AquaCrop Crop() CC0 equation,No,Not measured Dagbreek vine density
+SeedSize,640,software units,numerical implementation,AquaCrop Crop() CC0 equation,No,Not grapevine seed measurement
+Kcb,1.10,dimensionless,project-intended explicit parameter,Original project notes / literature candidate; exact paper attribution unverified,Yes,Previously omitted and custom-crop software default ~1.05 was used; water outputs must be rerun
+p_up1,0.3,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+p_lo1,0.8,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+fshape_w1,5.5,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+p_up2,0.5,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+p_lo2,1.0,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+fshape_w2,3.0,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+p_up3,0.85,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+p_lo3,1.0,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+fshape_w3,3.0,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+p_up4,0.9,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+p_lo4,1.0,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+fshape_w4,1.0,dimensionless,working crop stress parameter,"Original research notebook / AquaCrop mapping, origin not established",Yes,Needs table-by-table and version-specific source checking
+MIN_EMERGENCE_GDD,10,GDD,numerical safeguard,Current simulation stability workaround,No,Not physiological budbreak or full-budbreak requirement
+SandyLoam,built-in soil profile,soil,scenario assumption,AquaCrop Soil(soil_type=SandyLoam),No,Not a sampled Dagbreek soil
+InitialWaterContent,FC,initialisation,scenario assumption,AquaCrop scenario,No,"At 1 April model start, not measured field moisture"
+SMT,"[100,100,100,100]",%,scenario assumption,AquaCrop irrigation management 1,No,"Well-watered illustrative treatment, not historical irrigation"
+EE_CLOUD_THRESHOLD,30,%,processing method,Original research notebook,No,Scene-level metadata only; pixel-level SCL additionally applied
+NDVI_ENDMEMBERS,5th/95th percentiles,empirical proxy,method choice,Block-mean NDVI 2017–2024 dataset,No,Not physically observed pure soil/vegetation
+SG_WINDOW,7 points × 5 days,days,method choice,Original research notebook,No,Not field-calibrated; long gaps increase uncertainty

@@ -1,0 +1,2 @@
+Low_percentile,High_percentile,NDVI_low_endmember,NDVI_high_endmember,Grid_interval_days,SG_window_points,SG_nominal_window_days,SG_polyorder
+5,95,0.3837124570088851,0.8199285540299369,5,7,35,2

@@ -1,0 +1,2 @@
+Latest source notebook: 01_sentinel2_aquacrop_pipeline_FINAL (3).ipynb
+SHA256: da2dafd351cf253c020c4b7889ffd50fdbb5aa9d3a0a2c3db25186f17d6e1ff9

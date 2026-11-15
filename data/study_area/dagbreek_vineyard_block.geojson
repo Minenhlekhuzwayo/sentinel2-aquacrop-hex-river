@@ -1,0 +1,61 @@
+{
+  "type": "FeatureCollection",
+  "name": "dagbreek_vineyard_block",
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "name": "Dagbreek vineyard block",
+        "study": "Hex River Valley Sentinel-2 to AquaCrop-OSPy",
+        "geometry_source": "Digitized coordinates from original research notebook; not a cadastral boundary survey"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates": [
+          [
+            [
+              19.62129,
+              -33.474767
+            ],
+            [
+              19.622728,
+              -33.474454
+            ],
+            [
+              19.621923,
+              -33.471894
+            ],
+            [
+              19.621569,
+              -33.471993
+            ],
+            [
+              19.62159,
+              -33.472154
+            ],
+            [
+              19.621483,
+              -33.472216
+            ],
+            [
+              19.621537,
+              -33.47235
+            ],
+            [
+              19.621033,
+              -33.472458
+            ],
+            [
+              19.620979,
+              -33.472834
+            ],
+            [
+              19.62129,
+              -33.474767
+            ]
+          ]
+        ]
+      }
+    }
+  ]
+}
